@@ -40,3 +40,15 @@ Changelog for package visp_hand2eye_calibration
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
+0.8.0 (2015-04-01)
+------------------
+* Merge branch 'hydro-devel' into hydro
+* Reintroduce link_directories() requested to work with ros-hydro-visp-2.4.9
+* Merge branch 'master' into hydro-devel
+* Remove catkin_lint issues and warnings
+* Fix doc url location
+* hydro-0.7.5
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+
