@@ -1,3 +1,30 @@
+## vision_visp (indigo) - 0.8.0-0
+
+The packages in the `vision_visp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release vision_visp --track indigo --rosdistro indigo` on `Tue, 31 Mar 2015 14:33:16 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+- upstream repository: https://github.com/lagadic/vision_visp.git
+- release repository: https://github.com/lagadic/vision_visp-release.git
+- rosdistro version: `0.7.5-0`
+- old version: `0.7.5-0`
+- new version: `0.8.0-0`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.7`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.1`
+- vcstools version: `0.1.36`
+
+
 ## vision_visp (groovy) - 0.7.5-0
 
 The packages in the `vision_visp` repository were released into the `groovy` distro by running `/usr/bin/bloom-release vision_visp --track groovy --rosdistro groovy` on `Fri, 01 Aug 2014 13:19:39 -0000`
