@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>visp_bridge</name>
-  <version>0.7.5</version>
+  <version>0.8.0</version>
   <description>
     Converts between ROS structures and ViSP structures.
   </description>
@@ -11,7 +11,7 @@
 
   <license>GPLv2</license>
 
-  <url>http://ros.org/wiki/visp_bridge</url>
+  <url>http://wiki.ros.org/visp_bridge</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>geometry_msgs</build_depend>
