@@ -2,9 +2,52 @@
 Changelog for package visp_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.8.0 (2015-03-31)
+0.7.0 (2014-03-12)
 ------------------
-* Merge branch 'indigo-devel' into indigo
+
+0.7.1 (2014-03-13)
+------------------
+* Fix errors detected with catkin_lint
+* hydro-0.7.0
+* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
+* Contributors: Fabien Spindler, Thomas Moulard
+
+0.7.2 (2014-03-14)
+------------------
+* Merge branch 'hydro-devel' into hydro
+* Fix various dependency issues in the CMakeLists.txt and package.xml files
+* Use Boost Filesystem V3.
+* [visp_tracker] package.xml: add back Bullet dependency
+* Merge branch 'hydro-devel' into hydro
+* Add missing dependency to ViSP
+* hydro-0.7.1
+* Prepare changelogs
+* Contributors: Benjamin Chrétien, Fabien Spindler, Thomas Moulard
+
+0.7.3 (2014-04-10)
+------------------
+* hydro-0.7.2
+* Prepare changelogs
+* Reorganize launch files and fix since viewer and client nodes where renamed due to catkin_lint errors
+* Contributors: Fabien Spindler
+
+0.7.4 (2014-07-03)
+------------------
+* Update and fix content of README files
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.7.5 (2014-08-01)
+------------------
+* hydro-0.7.4
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.8.0 (2015-04-01)
+------------------
+* Merge branch 'hydro-devel' into hydro
+* Reintroduce link_directories() requested to work with ros-hydro-visp-2.4.9
+* Merge branch 'master' into hydro-devel
 * Remove catkin_lint issues and warnings
 * Fix doc url location
 * Fix hard coded "protected to public" for Model based trackers parameters.
@@ -14,8 +57,8 @@ Changelog for package visp_tracker
 * Fix dynamic reconfigure for bother client and tracker.
   Add forgotten mutex.unlock() when catching errors.
 * Remove "bad suppress value" message and improve suppress state detection based on ViSP enum
-* Add frame_size parameter to the tracker client and viewer nodes that allow to specify 
-  the lenght (in meter) of the frame axis
+* Add frame_size parameter to the tracker client and viewer nodes that allow to 
+  specify the lenght (in meter) of the frame axis
 * Fix compat with ViSP-2.9.0
 * Fix to save/read initial pose from /tmp/${USER}/${model_name}.0.pos file
 * Show optional help file during initialization. To this end 2
@@ -44,7 +87,7 @@ Changelog for package visp_tracker
 * Fix to set Klt config at initialization.
   To check if really necessary.
 * Merge branch 'master' of https://github.com/lagadic/vision_visp
-* From /model_decription parameter decode the type of model that is used (vrml or cao) 
+* From /model_decription parameter decode the type of model that is used (vrml or cao)
   to be able to consider both descriptions in the viewer
 * Tracker client and viewer can now consider not only /camera_prefix but also 
   /node_name/camera_prefix parameters
@@ -57,43 +100,7 @@ Changelog for package visp_tracker
 * Sync with ViSP 2.10.0
 * Fix compat with ViSP 2.10.0
 * Fix compat with ViSP 2.10.0
-* indigo-0.7.5
+* hydro-0.7.5
 * Prepare changelogs
 * Contributors: Aurelien Yol, Fabien Spindler
-
-0.7.5 (2014-08-01)
-------------------
-* indigo-0.7.4
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.4 (2014-07-03)
-------------------
-* Update and fix content of README files
-* Contributors: Fabien Spindler
-
-0.7.3 (2014-04-10)
-------------------
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.2 (2014-04-07)
-------------------
-* Remove bullet usage and dependency by using ViSP instead. This was done to avoid errors when releasing vision_visp on oneiric/groovy where bullet is not packaged.
-* Reorganize launch files and fix since viewer and client nodes where renamed due to catkin_lint errors
-* Fix various dependency issues in the CMakeLists.txt and package.xml files
-* Use Boost Filesystem V3.
-* [visp_tracker] package.xml: add back Bullet dependency
-* Add missing dependency to ViSP
-* Fix errors detected with catkin_lint
-* Contributors: Benjamin Chrétien, Fabien Spindler, Thomas Moulard
-
-0.7.0 (2014-03-12)
-------------------
-* visp_tracker/package.xml: swithc license to GPLv2 to match the other packages.
-* Remove useless call to setup.py
-* Identify Fabien as the principal maintainer.
-* CMakeLists.txt: update bag file URL (use new GitHub Release API).
-* Merge visp_tracker as our subdirectory
-* Contributors: Thomas Moulard
 

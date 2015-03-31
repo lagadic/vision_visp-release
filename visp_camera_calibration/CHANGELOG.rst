@@ -2,19 +2,31 @@
 Changelog for package visp_camera_calibration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.8.0 (2015-03-31)
+0.7.0 (2014-03-12)
 ------------------
-* Merge branch 'indigo-devel' into indigo
-* Remove catkin_lint issues and warnings
-* Fix doc url location
-* indigo-0.7.5
-* Prepare changelogs
-* Contributors: Fabien Spindler
 
-0.7.5 (2014-08-01)
+0.7.1 (2014-03-13)
 ------------------
-* indigo-0.7.4
+* Fix errors detected with catkin_lint
+* hydro-0.7.0
+* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
+* Contributors: Fabien Spindler, Thomas Moulard
+
+0.7.2 (2014-03-14)
+------------------
+* Merge branch 'hydro-devel' into hydro
+* Fix various dependency issues in the CMakeLists.txt and package.xml files
+* Merge branch 'hydro-devel' into hydro
+* :lipstick: Aesthetic changes
+* Add missing dependency to ViSP
+* hydro-0.7.1
 * Prepare changelogs
+* Fix errors detected with catkin_lint
+* Contributors: Fabien Spindler, Thomas Moulard
+
+0.7.3 (2014-04-10)
+------------------
+* hydro-0.7.2
 * Contributors: Fabien Spindler
 
 0.7.4 (2014-07-03)
@@ -24,22 +36,19 @@ Changelog for package visp_camera_calibration
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
-0.7.3 (2014-04-10)
+0.7.5 (2014-08-01)
 ------------------
-* indigo-0.7.2
+* hydro-0.7.4
 * Prepare changelogs
-* Contributors: Fabien Spindler, Thomas Moulard
+* Contributors: Fabien Spindler
 
-0.7.2 (2014-04-07)
+0.8.0 (2015-04-01)
 ------------------
-* Fix various dependency issues in the CMakeLists.txt and package.xml files
-* :lipstick: Aesthetic changes
-* Add missing dependency to ViSP
-* Fix errors detected with catkin_lint
-* Contributors: Fabien Spindler, Thomas Moulard
-
-0.7.0 (2014-03-12)
-------------------
-* Merge visp_camera_calibration as our subdirectory
-* Contributors: Thomas Moulard
+* Merge branch 'hydro-devel' into hydro
+* Reintroduce link_directories() requested to work with ros-hydro-visp-2.4.9
+* Remove catkin_lint issues and warnings
+* Fix doc url location
+* hydro-0.7.5
+* Prepare changelogs
+* Contributors: Fabien Spindler
 
