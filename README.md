@@ -1,3 +1,30 @@
+## vision_visp (hydro) - 0.8.1-1
+
+The packages in the `vision_visp` repository were released into the `hydro` distro by running `/usr/bin/bloom-release vision_visp --track hydro --rosdistro hydro` on `Wed, 08 Apr 2015 16:56:26 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+- upstream repository: https://github.com/lagadic/vision_visp.git
+- release repository: https://github.com/lagadic/vision_visp-release.git
+- rosdistro version: `0.8.0-0`
+- old version: `0.8.1-0`
+- new version: `0.8.1-1`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.7`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.1`
+- vcstools version: `0.1.36`
+
+
 ## vision_visp (hydro) - 0.8.1-0
 
 The packages in the `vision_visp` repository were released into the `hydro` distro by running `/usr/bin/bloom-release vision_visp --track hydro --rosdistro hydro` on `Wed, 08 Apr 2015 15:54:27 -0000`
