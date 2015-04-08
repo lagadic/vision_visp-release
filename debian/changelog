@@ -1,0 +1,64 @@
+ros-hydro-vision-visp (0.8.1-1quantal) quantal; urgency=high
+
+  * hydro-0.8.0
+  * Prepare changelogs
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Tue, 07 Apr 2015 22:00:00 -0000
+
+ros-hydro-vision-visp (0.8.0-1quantal) quantal; urgency=high
+
+  * Merge branch 'hydro-devel' into hydro
+  * Merge branch 'master' into hydro-devel
+  * Fix doc url location
+  * hydro-0.7.5
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Tue, 31 Mar 2015 22:00:00 -0000
+
+ros-hydro-vision-visp (0.7.5-1quantal) quantal; urgency=high
+
+  * hydro-0.7.4
+  * Prepare changelogs
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Thu, 31 Jul 2014 22:00:00 -0000
+
+ros-hydro-vision-visp (0.7.4-1quantal) quantal; urgency=high
+
+  * 0.7.3
+  * Prepare changelogs
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Wed, 02 Jul 2014 22:00:00 -0000
+
+ros-hydro-vision-visp (0.7.3-1quantal) quantal; urgency=high
+
+  * hydro-0.7.2
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Wed, 09 Apr 2014 22:00:00 -0000
+
+ros-hydro-vision-visp (0.7.2-1quantal) quantal; urgency=high
+
+  * hydro-0.7.1
+  * Prepare changelogs
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Thu, 13 Mar 2014 23:00:00 -0000
+
+ros-hydro-vision-visp (0.7.1-1quantal) quantal; urgency=high
+
+  * hydro-0.7.0
+  * Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Wed, 12 Mar 2014 23:00:00 -0000
+
+ros-hydro-vision-visp (0.7.0-1quantal) quantal; urgency=high
+
+
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Tue, 11 Mar 2014 23:00:00 -0000
+
+
