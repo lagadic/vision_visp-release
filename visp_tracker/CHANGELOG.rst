@@ -4,50 +4,31 @@ Changelog for package visp_tracker
 
 0.7.0 (2014-03-12)
 ------------------
+* visp_tracker/package.xml: swithc license to GPLv2 to match the other packages.
+* Remove useless call to setup.py
+* Identify Fabien as the principal maintainer.
+* CMakeLists.txt: update bag file URL (use new GitHub Release API).
+* Merge visp_tracker as our subdirectory
+* Contributors: Thomas Moulard
 
-0.7.1 (2014-03-13)
+0.7.2 (2014-04-07)
 ------------------
-* Fix errors detected with catkin_lint
-* hydro-0.7.0
-* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
-* Contributors: Fabien Spindler, Thomas Moulard
-
-0.7.2 (2014-03-14)
-------------------
-* Merge branch 'hydro-devel' into hydro
+* Remove bullet usage and dependency by using ViSP instead. This was done to avoid errors when releasing vision_visp on oneiric/groovy where bullet is not packaged.
+* Reorganize launch files and fix since viewer and client nodes where renamed due to catkin_lint errors
 * Fix various dependency issues in the CMakeLists.txt and package.xml files
 * Use Boost Filesystem V3.
 * [visp_tracker] package.xml: add back Bullet dependency
-* Merge branch 'hydro-devel' into hydro
 * Add missing dependency to ViSP
-* hydro-0.7.1
-* Prepare changelogs
+* Fix errors detected with catkin_lint
 * Contributors: Benjamin Chrétien, Fabien Spindler, Thomas Moulard
 
 0.7.3 (2014-04-10)
 ------------------
-* hydro-0.7.2
-* Prepare changelogs
-* Reorganize launch files and fix since viewer and client nodes where renamed due to catkin_lint errors
-* Contributors: Fabien Spindler
-
-0.7.4 (2014-07-03)
-------------------
-* Update and fix content of README files
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.5 (2014-08-01)
-------------------
-* hydro-0.7.4
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
 0.8.0 (2015-04-01)
 ------------------
-* Merge branch 'hydro-devel' into hydro
-* Reintroduce link_directories() requested to work with ros-hydro-visp-2.4.9
-* Merge branch 'master' into hydro-devel
 * Remove catkin_lint issues and warnings
 * Fix doc url location
 * Fix hard coded "protected to public" for Model based trackers parameters.
@@ -87,10 +68,10 @@ Changelog for package visp_tracker
 * Fix to set Klt config at initialization.
   To check if really necessary.
 * Merge branch 'master' of https://github.com/lagadic/vision_visp
-* From /model_decription parameter decode the type of model that is used (vrml or cao)
-  to be able to consider both descriptions in the viewer
-* Tracker client and viewer can now consider not only /camera_prefix but also 
-  /node_name/camera_prefix parameters
+* From /model_decription parameter decode the type of model that is used 
+  (vrml or cao) to be able to consider both descriptions in the viewer
+* Tracker client and viewer can now consider not only /camera_prefix but 
+  also /node_name/camera_prefix parameters
 * Introduce comment arround /camera_prefix parameter
 * Rename model file name parameter to be generic.
   Delete useless setPose().
@@ -99,28 +80,6 @@ Changelog for package visp_tracker
 * Add comment to the model
 * Sync with ViSP 2.10.0
 * Fix compat with ViSP 2.10.0
-* Fix compat with ViSP 2.10.0
-* hydro-0.7.5
-* Prepare changelogs
-* Contributors: Aurelien Yol, Fabien Spindler
-
-0.8.1 (2015-04-08)
-------------------
-* Merge branch 'master' into hydro-devel
-* Improve data synchronization test based only on pose, klt points, and
-  moving edges features
-* Make ROS warn messages more explicit
-* Make dynamic reconfigure working with ViSP 2.9.0.
-  Ensure that the image is ready (test image size != 0) during dynamic
-  reconfigure initialisation.
-* Use VP_VERSION_INT
-* Fix compat with ViSP 2.9.0. Fix ROS_INFO message. Code indentation.
-* Improve ROS debug messages to be more generic.
-  Remove parameters that should not be modified by the user in dynamic reconfigure files.
-* Improve viewer node to handle dynamic reconfigure modifications.
-  Modify tutorials so that they use the new functionnalities.
-* Fix bug in visp_tracker_client to work without visp_tracker_viewer.
-* hydro-0.8.0
-* Prepare changelogs
+* Update and fix content of README files
 * Contributors: Aurelien Yol, Fabien Spindler
 

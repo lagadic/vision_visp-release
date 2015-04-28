@@ -23,12 +23,12 @@ include_directories(
   ${VISP_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
 )
-link_directories(
+#link_directories(
 #  ${BULLET_LIBRARY_DIRS}
-  ${Boost_LIBRARY_DIRS}
-  ${VISP_LIBRARY_DIRS}
-  ${catkin_LIBRARY_DIRS}
-  )
+#  ${Boost_LIBRARY_DIRS}
+#  ${VISP_LIBRARY_DIRS}
+#  ${catkin_LIBRARY_DIRS}
+#  )
 
 catkin_package(
    LIBRARIES auto_tracker
@@ -191,4 +191,3 @@ if(CATKIN_ENABLE_TESTING)
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   )
 endif()
-
