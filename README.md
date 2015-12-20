@@ -1,85 +1,63 @@
-ViSP stack for ROS
-==================
+# visp_tracker
 
-![GPL-2](https://www.gnu.org/graphics/gplv3-127x51.png)
+visp_tracker wraps the ViSP moving edge tracker provided by the ViSP
+visual servoing library into a ROS package.
 
-`vision_visp` provides ViSP algorithms as ROS components. [ViSP]
-[visp] is the Visual Servoing Platform and [ROS] [ros] a robotics
-middleware.
-
-These packages are released under the [GPL-2](COPYING) license.
+This computer vision algorithm computes the pose (i.e. position and
+orientation) of an object in an image. It is fast enough to allow
+object online tracking using a camera.
 
 
-Components documentation is hosted on the [ros.org wiki] [vision_visp-wiki].
+This package is composed of one node called 'tracker' and two
+additional binaries 'client' and 'viewer'.
 
-Support is provided through [ROS Answers] [vision_visp-answers] .
+The node tries to track the object as fast as possible but needs to be
+initialized using the client. The viewer can be used to monitor the
+tracking result.
 
-
-Which branch should I use?
---------------------------
-
-Branches come in two flavors:
-
- * development branch,
- * release branch
-
-Package for each ROS release is maintained on separate
-branches. I.e. `jade-devel` is the Jade development branch whereas
-`jade` is the Jade release branch.
-
-`master` means the next ROS release.
-
-If you are a user you should use a release branch as they contain
-stable and tested versions of the packages. If you are a developper
-you must provide new patches against `master`. You may also provide
-version-specific bug fix again older releases.
+* [Project webpage on ros.org: tutorial and API reference] [ros-homepage]
+* [Project webpage: source code download, bug report] [github-homepage]
 
 
- - Never implement new features in old branches (i.e. not
-   master). These Pull Requests will not be accepted. If you provide a
-   bug fix then you may ask for it to be backported. ABI/API breakage
-   prevent patches from being backported.
- - The *only* action allowed in release branches is merging the
-   development branch in the current branch.
+## Setup
 
+This package can be compiled like any other catkin package using `catkin_make`. 
 
-*Warning:* the Fuerte branches still rely on the legacy `rosbuild`
- build system. We recommend you to update to a newer ROS release. Only
- minimum maintained will be done for this release.
+### Prerequisities
 
+First you need to install ViSP as a system dependency. This can be achived using `ros-indigo-visp` package for Ubuntu. Just run:
 
-Additional development guidelines are provided in
-[CONTRIBUTING.md](CONTRIBUTING.md).
+	$ sudo apt-get install ros-indigo-visp
 
+If the package is not available (this is for example the case for Fedora) or if you want to use a more recent version of ViSP, you can also install ViSP from source:
 
+	$ cd ~
+	$ svn checkout svn://scm.gforge.inria.fr/svn/visp/trunk/ViSP
+	$ cd ViSP
+	$ cmake -DBUILD_SHARED_LIBS=ON .
+	$ make -j8
 
-Build Status
-------------
+Then to use this version you have to setup `VISP_DIR` environment variable to the folder that contains the build. In ou case it becomes:
 
-This stack supports the following ROS releases:
+	$ export VISP_DIR=~/ViSP
 
- * Hydro
- * Groovy
- * Fuerte
- * Indigo
- * Jade
+### How to get and build visp_tracker 
 
-The master branch holds the development that will be available in the
-next ROS release.
+Supposed you have a catkin work space just run:
 
+	$ cd ~/catkin_ws/src 
+	$ git clone -b indigo-devel https://github.com/lagadic/vision_visp.git
+	$ cd ..
+	$ catkin_make --pkg visp_tracker
 
-| ROS Release   | Development Branch           | Development branch (ros.org) | Release Branch | Documentation (ros.org) |
-| ------------- | ---------------------------- | ---------------------------- | -------------- | ----------------------- |
-| Master        | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=master)](https://travis-ci.org/lagadic/vision_visp) | N/A | N/A | N/A |
-| Jade          | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=jade-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=devel-jade-vision_visp)](http://jenkins.ros.org/job/devel-jade-vision_visp/) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=jade)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=doc-jade-vision_visp)](http://jenkins.ros.org/job/doc-jade-vision_visp/) |
-| Indigo         | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=indigo-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=devel-indigo-vision_visp)](http://jenkins.ros.org/job/devel-indigo-vision_visp/) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=indigo)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=doc-indigo-vision_visp)](http://jenkins.ros.org/job/doc-indigo-vision_visp/) |
-| Hydro         | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=hydro-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=devel-hydro-vision_visp)](http://jenkins.ros.org/job/devel-hydro-vision_visp/) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=hydro)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=doc-hydro-vision_visp)](http://jenkins.ros.org/job/doc-hydro-vision_visp/) |
-| Groovy         | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=groovy-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=devel-groovy-vision_visp)](http://jenkins.ros.org/job/devel-groovy-vision_visp/) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=groovy)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=doc-groovy-vision_visp)](http://jenkins.ros.org/job/doc-groovy-vision_visp/) |
-| Fuerte         | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=fuerte-devel)](https://travis-ci.org/lagadic/vision_visp) | N/A | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=fuerte)](https://travis-ci.org/lagadic/vision_visp) | N/A |
+## Documentation
 
+The documentation is available on the project [ROS homepage]
+[ros-homepage].
 
+For more information, refer to the [ROS tutorial]
+[ros-tutorial-building-pkg].
 
-[visp]: http://www.irisa.fr/lagadic/visp/visp.html
-[ros]: http://www.ros.org
-[vision_visp-wiki]: http://wiki.ros.org/vision_visp
-[vision_visp-answers]: http://answers.ros.org/questions/scope:all/sort:activity-desc/tags:vision_visp/page:1/
+[github-homepage]: https://github.com/laas/visp_tracker
+[ros-homepage]: http://www.ros.org/wiki/visp_tracker
+[ros-tutorial-building-pkg]: http://www.ros.org/wiki/ROS/Tutorials/BuildingPackages "Building a ROS Package"
