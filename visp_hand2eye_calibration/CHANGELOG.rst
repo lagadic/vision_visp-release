@@ -2,45 +2,10 @@
 Changelog for package visp_hand2eye_calibration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.9.0 (2015-12-20)
+0.7.0 (2014-03-12)
 ------------------
-* Fix catkin_lint errors and warnings
-* indigo-0.8.1
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.8.1 (2015-04-08)
-------------------
-* indigo-0.8.0
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.8.0 (2015-03-31)
-------------------
-* Merge branch 'indigo-devel' into indigo
-* Remove catkin_lint issues and warnings
-* Fix doc url location
-* indigo-0.7.5
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.5 (2014-08-01)
-------------------
-* indigo-0.7.4
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.4 (2014-07-03)
-------------------
-* Update and fix content of README files
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.3 (2014-04-10)
-------------------
-* indigo-0.7.2
-* Prepare changelogs
-* Contributors: Fabien Spindler
+* Merge visp_hand2eye_calibration as our subdirectory
+* Contributors: Thomas Moulard
 
 0.7.2 (2014-04-07)
 ------------------
@@ -50,8 +15,26 @@ Changelog for package visp_hand2eye_calibration
 * Fix errors detected with catkin_lint
 * Contributors: Fabien Spindler, Thomas Moulard
 
-0.7.0 (2014-03-12)
+0.7.3 (2014-04-10)
 ------------------
-* Merge visp_hand2eye_calibration as our subdirectory
-* Contributors: Thomas Moulard
+* indigo-0.7.2
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.8.0 (2015-04-01)
+------------------
+* Remove catkin_lint issues and warnings
+* Fix doc url location
+* Update and fix content of README files
+* 0.7.3
+* Prepare changelogs
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.9.0 (2015-12-20)
+------------------
+* Fix catkin_lint error and issues
+* jade-0.8.0
+* Prepare changelogs
+* Contributors: Fabien Spindler
 
