@@ -8,18 +8,16 @@ branches:
   - hydro-devel
   - indigo
   - indigo-devel
-  - jade
-  - jade-devel
   - master
   
 matrix:
   allow_failures:
   - compiler: clang
-  
+
 notifications:
   email:
   - Fabien.Spindler@inria.fr
-  
+
 env:
   global:
     secure: ldI5kV88XCBoLIVeA8sFAeDX+OwAfHpEvfB0cwuSdRKAnhcK4DRsfIYPkQoibZ70AzuWF6OfD84QNcq90hGgDeUFnhnmFy1J5IrPtT3YawYfxvM75jQECgwGPb4v8RSBzzVZEYxGFVJMm8xiBZ7jiN8GjaV2gr22C3dtgOS6HNY=

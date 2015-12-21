@@ -20,13 +20,6 @@ include_directories(SYSTEM
   ${VISP_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
   )
-#link_directories(
-#  ${BULLET_LIBRARY_DIRS}
-#  ${Boost_LIBRARY_DIRS}
-#  ${VISP_LIBRARY_DIRS}
-#  ${catkin_LIBRARY_DIRS}
-#  )
-
 
 # Generate messages and services.
 add_message_files(
@@ -61,7 +54,6 @@ target_link_libraries(visp_camera_calibration_common
   ${catkin_LIBRARIES}
   ${roscpp_LIBRARIES}
   )
-
 
 add_executable(visp_camera_calibration_calibrator
   src/calibrator.cpp

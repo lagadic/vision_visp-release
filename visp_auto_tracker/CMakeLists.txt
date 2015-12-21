@@ -23,26 +23,21 @@ include_directories(
   ${VISP_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
 )
-#link_directories(
-#  ${BULLET_LIBRARY_DIRS}
-#  ${Boost_LIBRARY_DIRS}
-#  ${VISP_LIBRARY_DIRS}
-#  ${catkin_LIBRARY_DIRS}
-#  )
 
 catkin_package(
-   LIBRARIES auto_tracker
+  LIBRARIES 
+    auto_tracker
 
-   CATKIN_DEPENDS
-   geometry_msgs
-   message_filters
-   roscpp
-   sensor_msgs
-   std_msgs
+  CATKIN_DEPENDS
+    geometry_msgs
+    message_filters
+    roscpp
+    sensor_msgs
+    std_msgs
 
-   DEPENDS
-   VISP
-   )
+  DEPENDS
+    VISP
+  )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/flashcode_mbt)
 
@@ -111,9 +106,6 @@ else()
       ${Boost_LIBRARIES}
   )
 endif()
-
-
-
 
 add_executable(visp_auto_tracker
   src/main.cpp
