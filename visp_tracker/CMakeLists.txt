@@ -36,6 +36,7 @@ add_message_files(
     MovingEdgeSites.msg
     TrackerSettings.msg
   )
+  
 add_service_files(
   DIRECTORY 
     srv
@@ -74,11 +75,6 @@ include_directories(SYSTEM
   ${VISP_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
   )
-#link_directories(SYSTEM
-#  ${Boost_LIBRARY_DIRS}
-#  ${VISP_LIBRARY_DIRS}
-#  ${catkin_LIBRARY_DIRS}
-#  )
 
 include_directories(
   "${CMAKE_CURRENT_SOURCE_DIR}/src/libvisp_tracker")
