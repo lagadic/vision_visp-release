@@ -1,0 +1,12 @@
+Source: ros-kinetic-visp-hand2eye-calibration
+Section: misc
+Priority: extra
+Maintainer: Fabien Spindler <Fabien.Spindler@inria.fr>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-image-proc, ros-kinetic-message-generation, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-visp, ros-kinetic-visp-bridge
+Homepage: http://wiki.ros.org/visp_hand2eye_calibration
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-visp-hand2eye-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-geometry-msgs, ros-kinetic-image-proc, ros-kinetic-message-generation, ros-kinetic-message-runtime, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-visp, ros-kinetic-visp-bridge
+Description: visp_hand2eye_calibration estimates the camera position with respect to its effector using the ViSP library.
