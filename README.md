@@ -1,3 +1,32 @@
+## vision_visp (jade) - 0.10.0-0
+
+The packages in the `vision_visp` repository were released into the `jade` distro by running `/usr/bin/bloom-release vision_visp --track jade --rosdistro jade` on `Mon, 13 Feb 2017 18:20:47 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+
+- upstream repository: https://github.com/lagadic/vision_visp.git
+- release repository: https://github.com/lagadic/vision_visp-release.git
+- rosdistro version: `0.9.1-0`
+- old version: `0.9.1-0`
+- new version: `0.10.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## vision_visp (kinetic) - 0.10.0-0
 
 The packages in the `vision_visp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release vision_visp --track kinetic --rosdistro kinetic` on `Fri, 10 Feb 2017 18:39:36 -0000`
