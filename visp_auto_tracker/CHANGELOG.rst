@@ -2,10 +2,10 @@
 Changelog for package visp_auto_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.10.0 (2017-02-10)
+0.10.0 (2017-02-13)
 -------------------
 * Fix catkin_lint warnings level 2
-* kinetic-0.9.3
+* jade-0.9.1
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
@@ -87,11 +87,4 @@ Changelog for package visp_auto_tracker
 * jade-0.9.0
 * Prepare changelogs
 * Contributors: Fabien Spindler
-
-0.9.3 (2016-05-20)
-------------------
-* Fix CMAKE_CXX_FLAGS as separated list
-* kinetic-0.9.2
-* Contributors: Fabien Spindler
-
 

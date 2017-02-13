@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(VISP REQUIRED)
+add_definitions(${VISP_DEFINITIONS})
 
 include_directories(SYSTEM
   ${BULLET_INCLUDE_DIRS}
@@ -19,6 +20,13 @@ include_directories(SYSTEM
   ${VISP_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
   )
+#link_directories(
+#  ${BULLET_LIBRARY_DIRS}
+#  ${Boost_LIBRARY_DIRS}
+#  ${VISP_LIBRARY_DIRS}
+#  ${catkin_LIBRARY_DIRS}
+#  )
+
 
 # Generate messages and services.
 add_message_files(

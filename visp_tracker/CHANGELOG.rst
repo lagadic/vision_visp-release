@@ -2,11 +2,11 @@
 Changelog for package visp_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.10.0 (2017-02-10)
+0.10.0 (2017-02-13)
 -------------------
 * Fix catkin_lint warnings level 2
 * Fix OpenCV issue when reconfiguring the visp_tracker (Closes `#58 <https://github.com/lagadic/vision_visp/issues/58>`_)
-* kinetic-0.9.3
+* jade-0.9.1
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
@@ -122,14 +122,6 @@ Changelog for package visp_tracker
 ------------------
 * Revert build_depend visp removal that is mandatory.
 * jade-0.9.0
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.9.3 (2016-05-20)
-------------------
-* kinetic-0.9.2
-* Cleanify code
-* jade-0.9.1
 * Prepare changelogs
 * Contributors: Fabien Spindler
 

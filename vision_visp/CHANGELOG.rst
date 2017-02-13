@@ -2,9 +2,9 @@
 Changelog for package vision_visp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.10.0 (2017-02-10)
+0.10.0 (2017-02-13)
 -------------------
-* kinetic-0.9.3
+* jade-0.9.1
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
@@ -46,13 +46,6 @@ Changelog for package vision_visp
 0.9.1 (2015-12-21)
 ------------------
 * jade-0.9.0
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.9.3 (2016-05-20)
-------------------
-* kinetic-0.9.2
-* jade-0.9.1
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
