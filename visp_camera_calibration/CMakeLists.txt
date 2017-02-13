@@ -20,13 +20,6 @@ include_directories(SYSTEM
   ${VISP_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
   )
-#link_directories(
-#  ${BULLET_LIBRARY_DIRS}
-#  ${Boost_LIBRARY_DIRS}
-#  ${VISP_LIBRARY_DIRS}
-#  ${catkin_LIBRARY_DIRS}
-#  )
-
 
 # Generate messages and services.
 add_message_files(
