@@ -1,0 +1,12 @@
+Source: ros-lunar-visp-bridge
+Section: misc
+Priority: extra
+Maintainer: Fabien Spindler <Fabien.Spindler@inria.fr>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-camera-calibration-parsers, ros-lunar-catkin, ros-lunar-geometry-msgs, ros-lunar-roscpp, ros-lunar-sensor-msgs, ros-lunar-std-msgs, ros-lunar-visp
+Homepage: http://wiki.ros.org/visp_bridge
+Standards-Version: 3.9.2
+
+Package: ros-lunar-visp-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-camera-calibration-parsers, ros-lunar-geometry-msgs, ros-lunar-roscpp, ros-lunar-sensor-msgs, ros-lunar-std-msgs, ros-lunar-visp
+Description: Converts between ROS structures and ViSP structures.
