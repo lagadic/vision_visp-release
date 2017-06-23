@@ -1,3 +1,32 @@
+## vision_visp (lunar) - 0.10.0-1
+
+The packages in the `vision_visp` repository were released into the `lunar` distro by running `/usr/bin/bloom-release vision_visp --track lunar --rosdistro lunar` on `Fri, 23 Jun 2017 12:47:30 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+
+- upstream repository: https://github.com/lagadic/vision_visp.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `0.10.0-0`
+- new version: `0.10.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## vision_visp (lunar) - 0.10.0-0
 
 The packages in the `vision_visp` repository were released into the `lunar` distro by running `/usr/bin/bloom-release vision_visp --track lunar --rosdistro lunar` on `Fri, 23 Jun 2017 12:29:51 -0000`
