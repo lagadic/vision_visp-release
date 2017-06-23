@@ -1,0 +1,13 @@
+Source: ros-lunar-visp-tracker
+Section: misc
+Priority: extra
+Maintainer: Fabien Spindler <fabien.spindler@inria.fr>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-dynamic-reconfigure, ros-lunar-geometry-msgs, ros-lunar-image-proc, ros-lunar-image-transport, ros-lunar-message-generation, ros-lunar-nodelet, ros-lunar-resource-retriever, ros-lunar-roscpp, ros-lunar-rospy, ros-lunar-sensor-msgs, ros-lunar-std-msgs, ros-lunar-tf, ros-lunar-visp
+Homepage: http://wiki.ros.org/wiki/visp_tracker
+Standards-Version: 3.9.2
+
+Package: ros-lunar-visp-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-dynamic-reconfigure, ros-lunar-geometry-msgs, ros-lunar-image-proc, ros-lunar-image-transport, ros-lunar-message-generation, ros-lunar-message-runtime, ros-lunar-nodelet, ros-lunar-resource-retriever, ros-lunar-roscpp, ros-lunar-rospy, ros-lunar-sensor-msgs, ros-lunar-std-msgs, ros-lunar-tf, ros-lunar-visp
+Description: Wraps the ViSP moving edge tracker provided by the ViSP visual servoing library into a ROS package.
+ This computer vision algorithm computes the pose (i.e. position and orientation) of an object in an image. It is fast enough to allow object online tracking using a camera.
