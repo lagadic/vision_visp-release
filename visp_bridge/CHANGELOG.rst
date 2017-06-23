@@ -2,70 +2,10 @@
 Changelog for package visp_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.10.0 (2017-02-13)
--------------------
-* Fix catkin_lint warnings level 2
-* indigo-0.9.1
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.9.1 (2015-12-21)
+0.7.0 (2014-03-12)
 ------------------
-* Revert build_depend visp removal that is mandatory.
-* indigo-0.9.0
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.9.0 (2015-12-20)
-------------------
-* Fix catkin_lint errors and warnings
-* Changed input to conversion functions to const
-* indigo-0.8.1
-* Prepare changelogs
-* Contributors: Fabien Spindler, Riccardo Spica
-
-0.8.1 (2015-04-08)
-------------------
-* indigo-0.8.0
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.8.0 (2015-03-31)
-------------------
-* Merge branch 'indigo-devel' into indigo
-* Remove catkin_lint issues and warnings
-* Fix doc url location
-* Revert previous commit that breaks compat
-* indigo-0.7.5
-* Prepare changelogs
-* Contributors: Fabien Spindler, Riccardo Spica
-
-0.7.5 (2014-08-01)
-------------------
-* Revert previous commit that breaks compat
-* indigo-0.7.4
-* Prepare changelogs
-* Contributors: Fabien Spindler
-
-0.7.4 (2014-07-03)
-------------------
-* Update and fix content of README files
-* Revised with comments from fspindle
-* Changed the way boost is linked
-* Renamed conversion tool
-* Mark camera parameter converter for installation
-* minor changes
-* Support for distortion camera parameter model
-* Delete existing output file
-* tool for converting visp camera parameter files to/from ros camera  parameter files
-* Prepare changelogs
-* Contributors: Fabien Spindler, Riccardo Spica
-
-0.7.3 (2014-04-10)
-------------------
-* indigo-0.7.2
-* Prepare changelogs
-* Contributors: Fabien Spindler
+* Merge visp_bridge as our subdirectory
+* Contributors: Thomas Moulard
 
 0.7.2 (2014-04-07)
 ------------------
@@ -74,8 +14,58 @@ Changelog for package visp_bridge
 * Fix errors detected with catkin_lint
 * Contributors: Fabien Spindler, Thomas Moulard
 
-0.7.0 (2014-03-12)
+0.7.3 (2014-04-10)
 ------------------
-* Merge visp_bridge as our subdirectory
-* Contributors: Thomas Moulard
+* indigo-0.7.2
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.8.0 (2015-04-01)
+------------------
+* Remove catkin_lint issues and warnings
+* Fix doc url location
+* Revert previous commit that breaks compat
+* Update and fix content of README files
+* Revised with comments from fspindle
+* Changed the way boost is linked
+* Renamed conversion tool
+* Mark camera parameter converter for installation
+* minor changes
+* Support for distortion camera parameter model
+* Delete existing output file
+
+0.10.0 (2017-06-23)
+-------------------
+* Fix catkin_lint warnings level 2
+* kinetic-0.9.3
+* Prepare changelogs
+* Contributors: Fabien Spindler
+* tool for converting visp camera parameter files to/from ros camera  parameter files
+* 0.7.3
+* Prepare changelogs
+* Prepare changelogs
+* Contributors: Fabien Spindler, Riccardo Spica
+
+0.9.0 (2015-12-20)
+------------------
+* Fix catkin_lint error and issues
+* Changed input to conversion functions to const
+* jade-0.8.0
+* Prepare changelogs
+* Contributors: Fabien Spindler, Riccardo Spica
+
+0.9.1 (2015-12-21)
+------------------
+* Revert build_depend visp removal that is mandatory.
+* jade-0.9.0
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.9.3 (2016-05-20)
+------------------
+* kinetic-0.9.2
+* Cleanify code
+* jade-0.9.1
+* Prepare changelogs
+* Contributors: Fabien Spindler
 

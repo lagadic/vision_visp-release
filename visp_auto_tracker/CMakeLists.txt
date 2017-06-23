@@ -1,6 +1,26 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(visp_auto_tracker)
 
+# Since kinetic to avoid warning:
+#
+# In file included from /home/fspindle/ros_catkin_ws/src/vision_visp/visp_auto_tracker/src/node.cpp:36:0:
+# /opt/ros/kinetic/include/resource_retriever/retriever.h:81:38: warning: defaulted and deleted functions
+# only available with -std=c++11 or -std=gnu++11
+#   Retriever(const Retriever & ret) = delete;
+#
+# we add -std=c++11
+# check c++11 / c++0x
+include(CheckCXXCompilerFlag)
+check_cxx_compiler_flag("-std=c++11" COMPILER_SUPPORTS_CXX11)
+check_cxx_compiler_flag("-std=gnu++11" COMPILER_SUPPORTS_GNUXX11)
+
+#catkin_lint: ignore endblock_args indentation
+if(COMPILER_SUPPORTS_CXX11)
+  set(EXTRA_CXX_FLAGS "-std=c++11")
+elseif(COMPILER_SUPPORTS_GNUXX11)
+  set(EXTRA_CXX_FLAGS "-std=gnu++11")
+endif()
+
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_filters
@@ -25,24 +45,20 @@ include_directories(
 )
 
 catkin_package(
-  LIBRARIES 
-    auto_tracker
+   LIBRARIES auto_tracker
 
-  CATKIN_DEPENDS
-    geometry_msgs
-    message_filters
-    roscpp
-    sensor_msgs
-    std_msgs
+   CATKIN_DEPENDS
+   geometry_msgs
+   message_filters
+   roscpp
+   sensor_msgs
+   std_msgs
 
-  DEPENDS
-    VISP
-  )
+   DEPENDS
+   VISP
+   )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/flashcode_mbt)
-
-# Add ViSP definitions.
-add_definitions(${VISP_DEFINITIONS})
 
 # Library gathering libauto_tracker used by all nodes.
 add_library(${PROJECT_NAME}_cmd_line

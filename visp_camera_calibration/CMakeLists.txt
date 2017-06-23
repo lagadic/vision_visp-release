@@ -12,7 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(VISP REQUIRED)
-add_definitions(${VISP_DEFINITIONS})
 
 include_directories(SYSTEM
   ${BULLET_INCLUDE_DIRS}
