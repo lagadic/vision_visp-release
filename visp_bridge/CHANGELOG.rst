@@ -2,6 +2,13 @@
 Changelog for package visp_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.10.0 (2017-02-10)
+-------------------
+* Fix catkin_lint warnings level 2
+* kinetic-0.9.3
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
 0.7.0 (2014-03-12)
 ------------------
 * Merge visp_bridge as our subdirectory
@@ -33,13 +40,6 @@ Changelog for package visp_bridge
 * minor changes
 * Support for distortion camera parameter model
 * Delete existing output file
-
-0.10.0 (2017-06-23)
--------------------
-* Fix catkin_lint warnings level 2
-* kinetic-0.9.3
-* Prepare changelogs
-* Contributors: Fabien Spindler
 * tool for converting visp camera parameter files to/from ros camera  parameter files
 * 0.7.3
 * Prepare changelogs

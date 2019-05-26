@@ -62,7 +62,6 @@
 
 #include <visp/vpDisplayX.h>
 #include "visp/vpTrackingException.h"
-#include <boost/format.hpp>
 
 
 namespace visp_camera_calibration
