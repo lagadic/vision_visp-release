@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>visp_auto_tracker</name>
-  <version>0.11.1</version>
+  <version>0.12.0</version>
 
   <description>
     Online automated pattern-based object tracker relying on visual servoing.
@@ -50,4 +50,5 @@
   <run_depend>visp_bridge</run_depend>
   <run_depend>visp_tracker</run_depend>
   <run_depend>zbar</run_depend>
+  <run_depend>usb_cam</run_depend>
 </package>
