@@ -53,22 +53,23 @@ generate_dynamic_reconfigure_options(
 
 
 catkin_package(
-   LIBRARIES
-     trackerNodelet
-     ${PROJECT_NAME} 
+  LIBRARIES
+    trackerNodelet
+    ${PROJECT_NAME} 
 
-   CATKIN_DEPENDS
-     dynamic_reconfigure
-     geometry_msgs
-     message_runtime
-     nodelet
-     roscpp
-     sensor_msgs
-     std_msgs
+  CATKIN_DEPENDS
+    dynamic_reconfigure
+    geometry_msgs
+    message_runtime
+    nodelet
+    roscpp
+    sensor_msgs
+    std_msgs
+    tf
 
-   DEPENDS
-     VISP
-   )
+  DEPENDS
+    VISP
+  )
 
 include_directories(SYSTEM
   ${Boost_INCLUDE_DIRS}
@@ -121,7 +122,11 @@ target_link_libraries(${PROJECT_NAME}
   ${tf_LIBRARIES}
   )
 
-add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencpp ${PROJECT_NAME}_bag)
+if(CATKIN_ENABLE_TESTING)
+  add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencpp ${PROJECT_NAME}_bag)
+else()
+  add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencpp)
+endif()
 add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 install(DIRECTORY src/lib${PROJECT_NAME}/
