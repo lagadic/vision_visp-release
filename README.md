@@ -1,3 +1,32 @@
+## vision_visp (noetic) - 0.12.0-1
+
+The packages in the `vision_visp` repository were released into the `noetic` distro by running `/usr/bin/bloom-release vision_visp --track noetic --rosdistro noetic` on `Wed, 21 Apr 2021 13:41:48 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+
+- upstream repository: https://github.com/lagadic/vision_visp.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.12.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.1`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## vision_visp (kinetic) - 0.12.0-1
 
 The packages in the `vision_visp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release vision_visp --track kinetic --rosdistro kinetic` on `Thu, 11 Mar 2021 14:47:00 -0000`
