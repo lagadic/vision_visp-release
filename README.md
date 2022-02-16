@@ -1,59 +1,87 @@
-# visp_auto_tracker
+ViSP stack for ROS
+==================
+
+![GPL-2](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+`vision_visp` provides ViSP algorithms as ROS components. [ViSP]
+[visp] is the Visual Servoing Platform and [ROS] [ros] a robotics
+middleware.
+
+These packages are released under the [GPL-2](COPYING) license.
 
 
-visp_auto_tracker wraps model-based trackers provided by ViSP visual 
-servoing library into a ROS package. The tracked object should have a 
-QRcode of Flash code pattern. Based on the pattern, the object is 
-automaticaly detected. The detection allows then to initialise the 
-model-based trackers. When lost of tracking achieves a new detection 
-is performed that will be used to re-initialize the tracker.
+Components documentation is hosted on the [ros.org wiki] [vision_visp-wiki].
 
-This computer vision algorithm computes the pose (i.e. position and
-orientation) of an object in an image. It is fast enough to allow
-object online tracking using a camera.
-
-This package is composed of one node called 'visp_auto_tracker'. The 
-node tries first to detect the QRcode or the Flash code associated to 
-the object. Once the detection is performed, the node tracks the object. 
-When a lost of tracking occurs the node tries to detect once again the 
-object and then restart a tracking.
-
-The viewer comming with visp_tracker package can be used to monitor the 
-tracking result.
-
-* [Project webpage on ros.org: tutorial and API reference] [ros-homepage]
-* [Project webpage: source code download, bug report] [github-homepage]
+Support is provided through [ROS Answers] [vision_visp-answers] .
 
 
-## Setup
+Which branch should I use?
+--------------------------
 
-This package contains submodules. It can be compiled like any other ROS package using `catkin_make`. 
+Branches come in two flavors:
 
-### Prerequisities
+ * development branch,
+ * release branch
 
-visp_auto_tracker depends on visp_bridge and visp_tracker packages available from <https://github.com/lagadic/vision_visp> (indigo-devel branches).
+Package for each ROS release is maintained on separate
+branches. I.e. `melodic-devel` is the Melodic Morenia development branch whereas
+`melodic` is the Melodic Morenia release branch.
 
-visp_auto_tracker depends also on libdmtx-dev and libzbar-dev system dependencies. To install them run:
+`master` means the next ROS release.
 
-	$ sudo apt-get install libdmtx-dev libzbar-dev
+If you are a user you should use a release branch as they contain
+stable and tested versions of the packages. If you are a developper
+you must provide new patches against `master`. You may also provide
+version-specific bug fix again older releases.
 
-### How to get and build visp_tracker 
 
-Supposed you have a catkin work space just run:
+ - Never implement new features in old branches (i.e. not
+   master). These Pull Requests will not be accepted. If you provide a
+   bug fix then you may ask for it to be backported. ABI/API breakage
+   prevent patches from being backported.
+ - The *only* action allowed in release branches is merging the
+   development branch in the current branch.
 
-	$ cd ~/catkin_ws/src 
-	$ git clone -b indigo-devel https://github.com/lagadic/vision_visp.git
-	$ cd ..
-	$ catkin_make --pkg visp_auto_tracker
 
-## Documentation
+*Warning:* the Fuerte branches still rely on the legacy `rosbuild`
+ build system. We recommend you to update to a newer ROS release. Only
+ minimum maintained will be done for this release.
 
-The documentation is available on the project [ROS homepage]
-[ros-homepage].
 
-For more information, refer to the [ROS tutorial]
-[ros-tutorial-building-pkg].
+Additional development guidelines are provided in
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
-[github-homepage]: https://github.com/lagadic/visp_auto_tracker
-[ros-homepage]: http://www.ros.org/wiki/visp_auto_tracker
-[ros-tutorial-building-pkg]: http://www.ros.org/wiki/ROS/Tutorials/BuildingPackages "Building a ROS Package"
+
+
+Build Status
+------------
+
+This stack supports the following ROS releases:
+
+ * Hydro
+ * Groovy
+ * Fuerte
+ * Indigo
+ * Jade
+ * Kinetic
+ * Lunar
+ * Melodic
+ * Noetic
+
+The master branch holds the development that will be available in the
+next ROS release.
+
+
+| ROS Release   | Development Branch           | Release Branch |
+| ------------- | ---------------------------- | -------------- |
+| Master        | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=master)](https://travis-ci.org/lagadic/vision_visp) | N/A |
+| Melodic       | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=melodic-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=melodic)](https://travis-ci.org/lagadic/vision_visp) |
+| Lunar         | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=lunar-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=lunar)](https://travis-ci.org/lagadic/vision_visp) |
+| Kinetic       | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=kinetic-devel)](https://travis-ci.org/lagadic/vision_visp) | [![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=kinetic)](https://travis-ci.org/lagadic/vision_visp) |
+
+
+
+[visp]: https://visp.inria.fr
+[ros]: http://www.ros.org
+[vision_visp-wiki]: http://wiki.ros.org/vision_visp
+[vision_visp-answers]: http://answers.ros.org/questions/scope:all/sort:activity-desc/tags:vision_visp/page:1/
