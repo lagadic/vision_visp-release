@@ -1,0 +1,12 @@
+Source: ros-noetic-visp-bridge
+Section: misc
+Priority: optional
+Maintainer: Fabien Spindler <Fabien.Spindler@inria.fr>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-camera-calibration-parsers, ros-noetic-catkin, ros-noetic-geometry-msgs, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-visp
+Homepage: http://wiki.ros.org/visp_bridge
+Standards-Version: 3.9.2
+
+Package: ros-noetic-visp-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-camera-calibration-parsers, ros-noetic-geometry-msgs, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-visp
+Description: Converts between ROS structures and ViSP structures.
