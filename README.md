@@ -1,3 +1,32 @@
+## vision_visp (melodic) - 0.13.0-1
+
+The packages in the `vision_visp` repository were released into the `melodic` distro by running `/usr/bin/bloom-release vision_visp --track melodic --rosdistro melodic` on `Mon, 21 Feb 2022 08:00:59 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+
+- upstream repository: https://github.com/lagadic/vision_visp.git
+- release repository: https://github.com/lagadic/vision_visp-release.git
+- rosdistro version: `0.12.0-1`
+- old version: `0.12.0-1`
+- new version: `0.13.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.24`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## vision_visp (noetic) - 0.13.1-1
 
 The packages in the `vision_visp` repository were released into the `noetic` distro by running `/usr/bin/bloom-release vision_visp --track noetic --rosdistro noetic` on `Sun, 20 Feb 2022 16:34:08 -0000`
